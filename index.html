@@ -1,33 +1,40 @@
 <!DOCTYPE html>
 <html lang="nl">
-<head>
+  <head>
 
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>Guardian Down NL</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
+    <!-- Basic Page Needs
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Guardian Down NL</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!-- <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'> -->
 
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
-  <link rel="stylesheet" href="css/style.css">
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Javascript
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="javascripts/jquery.easing.1.3.js"></script>
+    <script src="javascripts/jquery.animate-enhanced.min.js"></script>
+    <script src="javascripts/jquery.superslides.js" type="text/javascript" charset="utf-8"></script>
 
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png" />
+    <!-- Favicon
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/favicon.png" />
 
-</head>
+  </head>
 <body>
 
   <!-- Menu & hero layout
@@ -39,13 +46,29 @@
         <div class="twelve column">
           <div class="logo">
             Guardian Down NL
-            <div class="tagline">epic raiders since 2014</div>
+            <div class="tagline">flawless raiders since 2014</div>
           </div>
           <div class="toggle u-pull-right"></div>
         </div>
       </div>
     </div>
   </header>
+  
+<!-- Full page slider
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div id="slides">
+  	<div class="slides-container">
+  	  <img src="images/destiny.jpg" alt="Destiny">
+  	  <img src="images/titan.jpg" alt="Titan">
+  	  <img src="images/hero-image.png" alt="Legend">
+  	  <img src="images/team.jpg" alt="Strike Team">
+  	</div>
+
+  	<nav class="slides-navigation">
+  	  <a href="#" class="next">Next</a>
+  	  <a href="#" class="prev">Previous</a>
+  	</nav>
+  </div>
 
 <!-- Content
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -59,8 +82,19 @@
   </div>
 </section>
 
+<!-- Start full page slider
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 </html>
+
+<script>
+$(function() {
+  $('#slides').superslides({
+  hashchange: true,
+  play: 10000
+  });
+});
+</script>

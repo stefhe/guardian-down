@@ -3,13 +3,13 @@ html, body {
 }
 
 .hero {
-	background: url(../images/hero-image.png) no-repeat center center;
-	-webkit-background-size: cover;
+	/* background: url(../images/hero-image.png) no-repeat center center; */
+	/* -webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	height: 90%;
-	width: 100%;
+	height: 10%;
+	width: 100%; */
 }
 
 .navbar {
@@ -69,7 +69,7 @@ html, body {
 		position: fixed;
 		/*top: 0;
 		left: 0;*/
-		background-color: rgba(0, 0, 0, 0.3);
+		background-color: rgba(0, 0, 0, 0.4);
 		z-index: 3;
 	}
 
@@ -99,6 +99,87 @@ html, body {
 		transform: skew(-20deg) !important;
 		text-transform: uppercase;
 	}
+	
+/* FULL PAGE SLIDER */
+
+#slides {
+	position: relative;
+	height: 90%!important;
+}
+	#slides .slides-container {
+		display: none;
+	}
+	#slides .scrollable {
+		*zoom: 1;
+		position: relative;
+		top: 0;
+		left: 0;
+		overflow-y: auto;
+		-webkit-overflow-scrolling: touch;
+		height: 100%;
+	}
+		#slides .scrollable:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+.slides-navigation {
+	margin: 0 auto;
+	position: absolute;
+	z-index: 3;
+	top: 46%;
+	width: 100%;
+}
+	.slides-navigation a {
+		position: absolute;
+		display: block;
+	}
+		.slides-navigation a.prev {
+			left: 0;
+			display: none;
+		}
+		.slides-navigation a.next {
+			right: 0;
+			display: none;
+		}
+
+.slides-pagination {
+	position: absolute;
+	z-index: 3;
+	bottom: 0;
+	text-align: center;
+	width: 100%;
+}
+	.slides-pagination a {
+		border: 1px solid #fff;
+		box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		-webkit-box-sizing:border-box;
+		width: 16px;
+		height: 16px;
+		/*-webkit-transform: rotate(45deg);*/
+		-webkit-transform: perspective(999px) rotate(45deg);
+    	-moz-transform: rotate(45deg);
+    	-ms-transform: rotate(45deg);
+    	-o-transform: rotate(45deg);
+    	transform: perspective(999px) rotate(45deg);
+		margin: 0 7px 25px;
+		/*background: #FCC038;*/
+		display: -moz-inline-stack;
+		display: inline-block;
+		vertical-align: middle;
+		*vertical-align: auto;
+		zoom: 1;
+		*display: inline;
+		overflow: hidden;
+		text-indent: -100%;
+	}
+		.slides-pagination a.current {
+			background: #222;
+			background: #FCC038;
+			border: 0px;
+		}
 
 /*CONTENT PART */
 
@@ -106,7 +187,7 @@ html, body {
 	background: #0E0516;
 	height: 100%;
 	width: auto;
-	padding: 60px 0;
+	padding: 60px 0; 
 }
 
 .content h1 {
