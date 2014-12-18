@@ -1,0 +1,117 @@
+html, body {
+	height: 100%;
+}
+
+.hero {
+	background: url(../images/hero-image.png) no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 90%;
+	width: 100%;
+}
+
+.navbar {
+	width: 100%;
+	height: 10rem;
+	background: rgba(255, 255, 25, 0);
+	/*z-index: 3;*/
+}
+	.logo {
+		font-size: 3rem;
+		letter-spacing: 4px;
+		color: #E6E6E6;
+		margin: 20px 0 0 0;
+		float: left;
+		text-transform: uppercase;
+	}
+		.tagline {
+			font-size: 1.3rem;
+			letter-spacing: 3px;
+			color: #F9AE21;
+			text-transform: uppercase;
+			font-weight: 300;
+		}
+
+	
+	/*MENU 
+		Ga ik met CSS animations nog maken > on click is dan een full-page overlay met onze menuitems. Lekker simpel & direct klaar voor de mobiele versie : );
+	*/
+	.toggle{
+		width: 24px;
+		height: 4px;
+		margin: 50px 0 0 0;
+		background: #FAAF21;
+		position: relative;
+		border-radius: 8px;
+		-moz-transition: all 0.3s;
+		-o-transition: all 0.3s;
+		-webkit-transition: all 0.3s;
+		transition: all 0.3s;
+	}
+		.toggle:after, .toggle:before {
+			content: '';
+		    width: 100%;
+		    height: 4px;
+		    background: #FAAF21;
+		    position: absolute;
+		    border-radius: 8px;
+		}
+			.toggle:before {
+				top: -8px;
+			}
+			.toggle:after {
+				top:8px
+			}
+	/* moet met javascript of css na zoveel pixels pas de achtergrond tonen : ) > moet nog geupdatet worden dus*/
+	.has-fixed-nav {
+		position: fixed;
+		/*top: 0;
+		left: 0;*/
+		background-color: rgba(0, 0, 0, 0.3);
+		z-index: 3;
+	}
+
+.title_block {
+	display:inline-block;
+	text-align:center;
+	-webkit-transform: skew(20deg);
+	-moz-transform: skew(20deg);
+	-ms-transform: skew(20deg);
+	-o-transform: skew(20deg);
+	transform: skew(20deg); 
+	background-image: -webkit-linear-gradient(bottom left, #FBBF37 0%, #FEC73A 100%);
+	background-image: -o-linear-gradient(bottom left, #FBBF37 0%, #FEC73A 100%);
+	background-image: linear-gradient(to top right, #FBBF37 0%, #FEC73A 100%);
+}
+
+	.title_block span {
+		display:block;
+		text-decoration:none;
+		padding:5px 10px;
+		font-size:1rem;
+		color: #40361C;
+		-webkit-transform: skew(-20deg) !important;
+		-moz-transform: skew(-20deg) !important;
+		-ms-transform: skew(-20deg) !important;
+		-o-transform: skew(-20deg) !important;
+		transform: skew(-20deg) !important;
+		text-transform: uppercase;
+	}
+
+/*CONTENT PART */
+
+.content {
+	background: #0E0516;
+	height: 100%;
+	width: auto;
+	padding: 60px 0;
+}
+
+.content h1 {
+	color: #F5FAF7;
+	letter-spacing: 7.5px;
+	font-size: 1.867rem;
+	text-align: center;
+}
