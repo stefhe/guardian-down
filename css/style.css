@@ -180,6 +180,26 @@ html, body {
 			background: #FCC038;
 			border: 0px;
 		}
+		
+/* ONE PAGE SCROLL */
+.slide-container {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+.slide-container img {
+	position: absolute;
+}
+.slide-container .slide-content {
+	position: absolute;
+	left: 10%;
+	top: 20%;
+	background-color: rgba(0, 0, 0, 0.4);
+	z-index: 3;
+	color: #fff;
+	padding: 3%;
+}
 
 /*CONTENT PART */
 
