@@ -209,10 +209,34 @@ html, body {
 	width: auto;
 	padding: 60px 0; 
 }
-
 .content h1 {
 	color: #F5FAF7;
 	letter-spacing: 7.5px;
 	font-size: 1.867rem;
 	text-align: center;
 }
+blockquote {
+	/*font-family: ;*/
+	font-size: 22px;
+	letter-spacing: 1.2px;
+	position: relative;
+	color: #9E9BA2;
+}
+	blockquote:before {
+		display: block;
+		content: "\201C";
+		font-size: 60px;
+		position: absolute;
+		left: -32px;
+		top: -25px;
+		color: #9E9BA2;
+	}
+		blockquote cite {
+			color: #FCC038;
+			font-size: 14px;
+			display: block;
+			margin: 5px 0 0 0;
+		}
+			blockquote cite:before {
+				content: "\2014 \2009";
+			}
